@@ -97,7 +97,6 @@ public class AnasayfaActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-
                 recIlaclarDIF.tumRecIlaclarByReceteKodu(editTextRecKodu.getText().toString()).enqueue(new Callback<RecetedekiIlaclarCevap>() {
                     @Override
                     public void onResponse(Call<RecetedekiIlaclarCevap> call, Response<RecetedekiIlaclarCevap> response) {
@@ -155,6 +154,4 @@ public class AnasayfaActivity extends AppCompatActivity {
         oturumProgress.dismiss();
         ActivityCompat.finishAffinity(AnasayfaActivity.this);
     }
-
-
 }
